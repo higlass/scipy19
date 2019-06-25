@@ -38,6 +38,14 @@ jupyter labextension install higlass-jupyter
    ```
    conda update -n base conda
    ```
+   
+   - You may also have to delete the half-created environment:
+   
+   ```
+   CondaValueError: prefix already exists: /Users/me/miniconda3/envs/higlass-scipy19
+   
+   $ rm -rf /Users/me/miniconda3/envs/higlass-scipy19
+   ```
 
 - If Conda seems to have gotten stuck, first check your processes using `top` or alike. Conda is dead slow these days and might just need some extra time. In the meantime you can make yourself a nice cup of coffee, go out for lunch, or head to Hawaii for your summer vacation.
 
