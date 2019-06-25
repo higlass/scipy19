@@ -39,11 +39,15 @@ jupyter labextension install higlass-jupyter
    conda update -n base conda
    ```
    
-   - You may also have to delete the half-created environment:
+   - If you end up with a half-created environment:
    
    ```
    CondaValueError: prefix already exists: /Users/me/miniconda3/envs/higlass-scipy19
+   ```
    
+   - You may have to delete it
+   
+   ```
    $ rm -rf /Users/me/miniconda3/envs/higlass-scipy19
    ```
 
