@@ -21,7 +21,7 @@ conda env create -f environment.yml
 Then start Jupyterlab:
 
 ```
-jupyterlab
+jupyter-lab
 ```
 
 Open a Terminal window and enter:
