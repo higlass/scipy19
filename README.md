@@ -18,17 +18,17 @@ cd scipy19
 conda env create -f environment.yml
 ```
 
-Then start Jupyterlab:
-
-```
-jupyter-lab
-```
-
 Open a Terminal window and enter:
 
 ```
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install higlass-jupyter
+```
+
+Then start Jupyterlab:
+
+```
+jupyter-lab
 ```
 
 ## Trouble shooting
