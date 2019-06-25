@@ -10,7 +10,7 @@ Notebooks are
 
 #### Installation
 
-First install the package:
+First install the environment:
 
 ```
 git clone https://github.com/higlass/scipy19
@@ -18,7 +18,7 @@ cd scipy19
 conda env create -f environment.yml
 ```
 
-Then install the HiGlass extension for Jupyterlab:
+Then start Jupyterlab:
 
 ```
 jupyterlab
