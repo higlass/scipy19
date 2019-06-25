@@ -45,7 +45,7 @@ jupyter labextension install higlass-jupyter
    CondaValueError: prefix already exists: /Users/me/miniconda3/envs/higlass-scipy19
    ```
    
-   - You may have to delete it
+   - You may have to delete it before continuing:
    
    ```
    $ rm -rf /Users/me/miniconda3/envs/higlass-scipy19
