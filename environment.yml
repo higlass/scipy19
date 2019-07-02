@@ -7,7 +7,7 @@ channels:
 dependencies:
   - python>=3.7
   - nodejs=10.*
-  - jupyterlab
+  - jupyterlab=0.35.6
   - pip
   - pip:
     - higlass-python
