@@ -30,10 +30,7 @@ def table_to_arrays(datetimes, temps):
 
     arr[hours] = temps
 
-    not_nan_array = np.ones(arr.shape)
-    not_nan_array[np.isnan(arr)] = 0
-
-    return (arr, not_nan_array)
+    return arr
 
 
 def get_ncei_temperature_data_as_array(definitions):
