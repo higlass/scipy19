@@ -4,15 +4,18 @@ import pandas as pd
 
 def parse_ncei_temperature_data(files, station: str = None):
     '''
-    https://www.ncei.noaa.gov/access/search/data-search/global-hourly?what=keywords:f634ab55-de40-4d0b-93bc-691bf5408ccb%7CAIR%2520TEMPERATURE::dataTypes:TMP%7CAir-Temperature-Observation%2520&bbox=48.273,11.441,47.999,11.715&name=Munich%252C%2520Bavaria%252C%2520DEU&sdate=1953-01-01&edate=2018-12-31
+    https://www.ncei.noaa.gov/access/search/data-search/global-hourly
     '''
-    tables = [pd.read_csv(file, delimiter=',', quotechar='"', low_memory=False) for file in files]
-    
+    tables = [
+        pd.read_csv(file, delimiter=',', quotechar='"', low_memory=False)
+        for file in files
+    ]
+
     if station is not None:
         tables = [t[t['STATION'] == station] for t in tables]
-    
+
     df = pd.concat(tables).drop_duplicates()
-    
+
     df['DATETIME'] = pd.to_datetime(df['DATE'])
     df['TEMP_C'] = [int(t.split(',')[0]) / 10. for t in df['TMP']]
     df = df[df['TEMP_C'] < 800]
@@ -20,7 +23,7 @@ def parse_ncei_temperature_data(files, station: str = None):
     return df
 
 
-def table_to_arrays(datetimes, temps):    
+def table_to_arrays(datetimes, temps):
     hours = datetimes.apply(lambda x: int(x.total_seconds() // 3600))
     arr = np.empty((max(hours)+1,))
     arr[:] = np.nan
@@ -35,20 +38,20 @@ def table_to_arrays(datetimes, temps):
 
 def get_ncei_temperature_data_as_array(definitions):
     temps = {}
-    
+
     for city in definitions:
         temps[city] = parse_ncei_temperature_data(
             definitions[city]['files'],
             definitions[city]['station']
         )
-    
+
     # Get the maximum-minimum and the minimum-maximum date time
     min_datetime = pd.to_datetime('1900-01-01T00:00:00')
     max_datetime = pd.to_datetime('2020-01-01T00:00:00')
     for city in definitions:
         min_datetime = max(min_datetime, min(temps[city]['DATETIME']))
         max_datetime = min(max_datetime, max(temps[city]['DATETIME']))
-    
+
     # Convert the tables to numerical arrays
     temp_arrays = {}
     for city in temps:
@@ -60,5 +63,5 @@ def get_ncei_temperature_data_as_array(definitions):
             temps[city][selection]['DATETIME'] - min_datetime,
             temps[city][selection]['TEMP_C']
         )
-    
-    return temp_arrays
+
+    return temp_arrays, (min_datetime, max_datetime)
