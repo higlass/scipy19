@@ -1,0 +1,11 @@
+url,filename
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-dropoff.count.1m.mcool,nyctaxi-dropoff.count.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-dropoff.passenger_count.mean.1m.mcool,nyctaxi-dropoff.passenger_count.mean.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-dropoff.tip_amount.mean.1m.mcool,nyctaxi-dropoff.tip_amount.mean.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-dropoff.total_amount.mean.1m.mcool,nyctaxi-dropoff.total_amount.mean.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-dropoff.trip_distance.mean.1m.mcool,nyctaxi-dropoff.trip_distance.mean.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-pickup.count.1m.mcool,nyctaxi-pickup.count.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-pickup.passenger_count.mean.1m.mcool,nyctaxi-pickup.passenger_count.mean.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-pickup.tip_amount.mean.1m.mcool,nyctaxi-pickup.tip_amount.mean.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-pickup.total_amount.mean.1m.mcool,nyctaxi-pickup.total_amount.mean.1m.mcool
+http://proteome.mit.edu/~nezar/data/nyctaxi/nyctaxi-pickup.trip_distance.mean.1m.mcool,nyctaxi-pickup.trip_distance.mean.1m.mcool
