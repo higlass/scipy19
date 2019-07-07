@@ -1,7 +1,5 @@
 # Demos from our Scipy 2019 talk
 
-Notebooks are 
-
 - [basic-setup.ipynb](basic-setup.ipynb): Simplest example possible to check that HiGlass loads properly in Jupyter Lab.
 - [temperature.ipynb](temperature.ipynb): Introduction to the python API for HiGlass using temperature measurements over the last \~50 years.
 - [point-data.ipynb](point-data.ipynb): An example of how the tileset API works and how one can build their own API from scratch.
