@@ -111,13 +111,16 @@ def get_ncei_temperature_data_as_array(definitions):
 
 def bed2ddb(filepath, name):
     """Factory function for bed2ddb tilesets"""
-    
+
     from higlass.tilesets import Tileset
     from clodius.tiles import bed2ddb
     from clodius.tiles.utils import tiles_wrapper_2d
-    
-    return Tileset( 
+
+    return Tileset(
         tileset_info=lambda: bed2ddb.get_2d_tileset_info(filepath),
-        tiles=lambda tile_ids: tiles_wrapper_2d(tile_ids, lambda z,x,y: bed2ddb.get_2D_tiles(filepath,z,x,y)[x,y]),
+        tiles=lambda tile_ids: tiles_wrapper_2d(
+            tile_ids,
+            lambda z, x, y: bed2ddb.get_2D_tiles(filepath, z, x, y)[x, y]
+        ),
         name=name
     )
