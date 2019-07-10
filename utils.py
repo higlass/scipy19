@@ -62,7 +62,7 @@ def parse_ncei_temperature_data(files, station: str = None):
     df = pd.concat(tables).drop_duplicates()
 
     df['DATETIME'] = pd.to_datetime(df['DATE'])
-    df['TEMP_C'] = [int(t.split(',')[0]) / 10. for t in df['TMP']]
+    df['TEMP_C'] = df['TMP'].str.split(',').apply(lambda x: int(x[0]) / 10.)
     df = df[df['TEMP_C'] < 800]
 
     return df
