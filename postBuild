@@ -1,4 +1,10 @@
 #!/bin/bash
 
+jupyter serverextension enable --sys-prefix nbserverproxy
+
+jupyter nbextension enable --py --sys-prefix widgetsnbextension
+jupyter nbextension install --py --sys-prefix --symlink higlass_jupyter
+jupyter nbextension enable --py --sys-prefix higlass_jupyter
+
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install higlass-jupyter

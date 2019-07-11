@@ -1,0 +1,3 @@
+fuse
+libfuse2
+libfuse-dev
