@@ -1,5 +1,7 @@
 # Demos from our Scipy 2019 talk
 
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/higlass/scipy19/master?urlpath=lab)
+
 **Slides**: [slides.pdf](slides.pdf)
 
 **Demos**:
