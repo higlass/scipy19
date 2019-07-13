@@ -2,7 +2,7 @@
 
 [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/higlass/scipy19/master?urlpath=lab)
 
-**Slides**: [slides.pdf](slides.pdf)
+**Slides**: [slides.pdf](slides.pdf) or [Speakerdeck](https://speakerdeck.com/flekschas/to-a-billion-and-beyond-how-to-visually-explore-compare-and-share-large-quantitative-datasets-with-higlass)
 
 **Demos**:
 - [basic-setup.ipynb](basic-setup.ipynb): Simplest example possible to check that HiGlass loads properly in Jupyter Lab.
