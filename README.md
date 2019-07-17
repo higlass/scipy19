@@ -2,6 +2,8 @@
 
 [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/higlass/scipy19/master?urlpath=lab)
 
+**Presentation** [Video](https://www.youtube.com/watch?v=v62k4Ok1S8g)
+
 **Slides**: [slides.pdf](slides.pdf) or [Speakerdeck](https://speakerdeck.com/flekschas/to-a-billion-and-beyond-how-to-visually-explore-compare-and-share-large-quantitative-datasets-with-higlass)
 
 **Demos**:
@@ -10,6 +12,7 @@
 - [point-data.ipynb](point-data.ipynb): An example of how the tileset API works and how one can build their own API from scratch.
 - [nyc-taxi.ipynb](nyc-taxi.ipynb): Demonstrate advanced features using the NYC Taxi dataset.
 - [genomics.ipynb](genomics.ipynb): Show how to work with and extend published HiGlass dashboards for collaboration and reproducibility.
+
 
 ## Getting started
 
