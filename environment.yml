@@ -9,7 +9,7 @@ dependencies:
   - nodejs=10.*
   - pip
   - pip:
-    - jupyterlab==0.35.6
-    - ipywidgets==7.4.2
+    - jupyterlab==1.1.1
+    - ipywidgets==7.5.1
     - higlass-python
     - nbserverproxy
