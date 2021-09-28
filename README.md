@@ -37,7 +37,7 @@ Next, install HiGlass' jupyter extension:
 
 ```
 conda activate higlass-scipy19
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.0
 jupyter labextension install higlass-jupyter@0.4.1
 ```
 
@@ -46,6 +46,8 @@ Finally, start Jupyterlab:
 ```
 jupyter-lab
 ```
+
+
 
 ## Trouble shooting
 
